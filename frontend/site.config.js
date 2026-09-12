@@ -42,7 +42,7 @@ export const siteConfig = {
 
   // Datos del entrenador (usados en JSON-LD Person / E-E-A-T)
   trainer: {
-    name: "Nombre Apellido",
+    name: "Andre Luiz",
     jobTitle: {
       es: "Entrenador personal",
       pt: "Personal trainer",
