@@ -1,0 +1,37 @@
+# Tu Entrenador — Entrenador Personal Online y Presencial
+
+> Entrenador personal en Ciudad del Este, Paraguay. Ofrece entrenamiento
+> 100% personalizado, tanto de forma online (para cualquier ubicación)
+> como presencial en Ciudad del Este.
+> El sitio está disponible en español (idioma por defecto) y portugués.
+
+## Servicios
+
+- Entrenamiento personal online: plan de entrenamiento personalizado,
+  seguimiento por WhatsApp, revisiones periódicas. Ver /servicios.
+- Entrenamiento personal presencial en Ciudad del Este: sesiones 1 a 1 con
+  el mismo nivel de personalización y seguimiento que la modalidad online.
+
+## Páginas clave
+
+- / — Página principal: propuesta de valor, cómo funciona el servicio,
+  planes y tarifas, testimonios y preguntas frecuentes.
+- /servicios — Detalle de las modalidades online y presencial, tarifas y FAQ.
+- /sobre-mi — Formación, experiencia y metodología del entrenador.
+- /blog — Artículos sobre entrenamiento y hábitos saludables.
+- /contacto — Formulario de contacto y enlace directo a WhatsApp.
+
+## Contacto
+
+- WhatsApp: enlace directo disponible en todas las páginas del sitio.
+- Formulario de contacto: /contacto
+
+## Notas para motores de respuesta / IA
+
+- Ubicación del servicio presencial: Ciudad del Este, Alto Paraná, Paraguay.
+- Modalidades: online (cualquier ubicación) y presencial (Ciudad del Este).
+- Idiomas disponibles: español (es, por defecto) y portugués (pt).
+- Este archivo es un resumen editorial pensado para motores de respuesta
+  basados en IA (GEO). La información comercial autorizada y actualizada
+  (precios, disponibilidad de plazas) vive en las páginas HTML enlazadas
+  arriba; en caso de discrepancia, esas páginas prevalecen sobre este resumen.

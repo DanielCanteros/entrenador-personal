@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "homeTitle": "Personal Trainer Online e Presencial em Ciudad del Este",
+    "homeDescription": "Treino 100% personalizado, online de qualquer lugar ou presencial em Ciudad del Este. Plano sob medida, acompanhamento real e resultados que se notam.",
+    "blogTitle": "Blog de treino",
+    "blogDescription": "Artigos sobre treino e hábitos saudáveis para te ajudar a treinar melhor e com critério.",
+    "aboutTitle": "Sobre mim",
+    "aboutDescription": "Conheça minha formação, experiência e metodologia como personal trainer.",
+    "servicesTitle": "Serviços de treino online e presencial",
+    "servicesDescription": "Treino personalizado online ou presencial em Ciudad del Este, com acompanhamento incluído.",
+    "contactTitle": "Contato",
+    "contactDescription": "Escreva-me pelo WhatsApp ou preencha o formulário para começar seu treino personalizado."
+  },
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "blog": "Blog",
+    "about": "Sobre mim",
+    "contact": "Contato",
+    "cta": "Começar agora",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "es": "Español",
+    "pt": "Português"
+  },
+  "hero": {
+    "eyebrow": "Personal trainer online e presencial em Ciudad del Este",
+    "title": "Seu treinador a uma mensagem de distância",
+    "subtitle": "Plano de treino 100% adaptado a você, com acompanhamento real. Treine online de onde estiver ou de forma presencial em Ciudad del Este.",
+    "bullets": [
+      "Plano claro e ajustado ao seu nível, objetivo e tempo disponível",
+      "Mudanças que você vê no espelho e nas métricas de progresso",
+      "Encaixa na sua rotina, sem abrir mão do que importa"
+    ],
+    "ctaPrimary": "Fale comigo no WhatsApp",
+    "ctaSecondary": "Ver planos e valores",
+    "badge": {
+      "role": "Personal trainer",
+      "experience": "Formação em Ciências do Esporte"
+    }
+  },
+  "howItWorks": {
+    "title": "Assim funciona seu treino personalizado",
+    "subtitle": "Um processo simples, pensado para que você não precise se preocupar com nada além de treinar.",
+    "steps": [
+      {
+        "title": "Conte-me seu objetivo",
+        "description": "Conversamos pelo WhatsApp ou videochamada sobre seu ponto de partida, seu objetivo e a academia ou material disponível."
+      },
+      {
+        "title": "Você recebe seu plano sob medida",
+        "description": "Elaboro seu treino personalizado, adaptado à sua rotina real, seja online ou presencial."
+      },
+      {
+        "title": "Treine com acompanhamento constante",
+        "description": "Reviso seu progresso periodicamente, ajusto o que for necessário e tiro suas dúvidas pelo WhatsApp."
+      }
+    ]
+  },
+  "services": {
+    "title": "Escolha sua modalidade de treino",
+    "subtitle": "Mesmo nível de personalização e acompanhamento, qualquer que seja a modalidade escolhida.",
+    "cta": "Fale comigo no WhatsApp",
+    "online": {
+      "title": "Treino online",
+      "description": "Treine de onde estiver, com um plano 100% adaptado ao seu equipamento (academia completa, casa ou material básico).",
+      "features": [
+        "Treino personalizado",
+        "Vídeo explicativo de cada exercício",
+        "Correção técnica por vídeo",
+        "Suporte diário pelo WhatsApp",
+        "Revisão e ajuste periódico do plano"
+      ]
+    },
+    "presencial": {
+      "title": "Treino presencial",
+      "description": "Sessões presenciais em Ciudad del Este, com o mesmo planejamento e acompanhamento do treino online.",
+      "features": [
+        "Sessões individuais em Ciudad del Este",
+        "Correção técnica em tempo real",
+        "Plano de treino personalizado",
+        "Acompanhamento de progresso e fotos/medidas",
+        "Flexibilidade de horários"
+      ]
+    }
+  },
+  "pricing": {
+    "title": "Valor atual",
+    "subtitle": "Um preço, tudo incluído. Eu ajusto cada detalhe; você só precisa executar o plano.",
+    "planName": "Plano completo",
+    "recommended": "Recomendado",
+    "price": "Consultar",
+    "period": "/ mês",
+    "features": [
+      "Treino 100% personalizado",
+      "Revisão periódica do seu progresso",
+      "Contato direto pelo WhatsApp",
+      "Ajustes ilimitados durante o plano"
+    ],
+    "cta": "Fale comigo no WhatsApp",
+    "note": "Valor final conforme modalidade (online ou presencial) e objetivo. Sem fidelidade."
+  },
+  "testimonials": {
+    "title": "O que dizem quem já treina comigo",
+    "subtitle": "Depoimentos reais de clientes. (Conteúdo de exemplo: substitua pelas suas avaliações do Google/clientes.)",
+    "items": [
+      {
+        "name": "Cliente satisfeito",
+        "text": "Comecei sem saber por onde ir e em poucos meses notei uma mudança real, tanto no espelho quanto na força. O acompanhamento constante faz toda a diferença.",
+        "rating": 5
+      },
+      {
+        "name": "Cliente satisfeita",
+        "text": "O que mais valorizo é que o plano se ajusta à minha rotina, e não o contrário. As revisões periódicas me mantêm motivada.",
+        "rating": 5
+      },
+      {
+        "name": "Cliente satisfeito",
+        "text": "Treino claro, sem complicação. Qualquer dúvida é resolvida rapidamente pelo WhatsApp.",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "subtitle": "Se eu não resolver sua dúvida aqui, escreva-me pelo WhatsApp.",
+    "items": [
+      {
+        "question": "O que inclui exatamente o serviço?",
+        "answer": "Treino 100% personalizado, comigo diretamente (não uma equipe genérica), com acompanhamento e ajustes periódicos, seja online ou presencial em Ciudad del Este."
+      },
+      {
+        "question": "Um personal trainer online realmente funciona?",
+        "answer": "Sim. Você recebe um plano adaptado ao seu equipamento e nível, com vídeos explicativos e correção técnica, além de suporte constante pelo WhatsApp para tirar dúvidas na hora."
+      },
+      {
+        "question": "Sou iniciante, é para mim?",
+        "answer": "Sim, especialmente. A maioria dos clientes começa do zero ou com experiência básica. O plano se adapta ao seu ponto de partida real."
+      },
+      {
+        "question": "Não tenho academia nem equipamento, posso treinar em casa?",
+        "answer": "Sim. Elaboro seu treino de acordo com o material disponível, desde academia completa até treino com peso corporal."
+      },
+      {
+        "question": "Em quanto tempo verei resultados?",
+        "answer": "As primeiras mudanças (energia, força, adesão ao plano) costumam aparecer entre a 2ª e a 4ª semana. As mudanças de composição corporal chegam de forma progressiva com a constância."
+      },
+      {
+        "question": "Posso treinar presencialmente se não moro em Ciudad del Este?",
+        "answer": "O treino presencial está disponível em Ciudad del Este e arredores. Se você está em outra localidade, a modalidade online oferece o mesmo nível de personalização e acompanhamento."
+      },
+      {
+        "question": "Há fidelidade ou posso cancelar quando quiser?",
+        "answer": "Não há fidelidade obrigatória. Escreva-me pelo WhatsApp e vemos juntos as condições de acordo com o seu caso."
+      }
+    ]
+  },
+  "ctaFinal": {
+    "title": "Pronto para parar de improvisar?",
+    "subtitle": "Escreva-me pelo WhatsApp e vamos conversar sobre seu objetivo, sem compromisso.",
+    "ctaPrimary": "Fale comigo no WhatsApp",
+    "ctaSecondary": "Ver o blog"
+  },
+  "footer": {
+    "tagline": "Treino personalizado, online e presencial em Ciudad del Este, Paraguai.",
+    "quickLinks": "Links",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados.",
+    "madeWith": "Site otimizado para busca, IA e respostas (SEO · GEO · AEO)."
+  },
+  "blog": {
+    "title": "Blog de treino",
+    "subtitle": "Artigos para te ajudar a treinar melhor e entender o porquê de cada decisão.",
+    "readMore": "Ler artigo",
+    "backToBlog": "Voltar ao blog",
+    "empty": "Ainda não há artigos publicados neste idioma. Volte em breve.",
+    "publishedOn": "Publicado em",
+    "minRead": "min de leitura",
+    "relatedTitle": "Outros artigos",
+    "alsoAvailable": "Também disponível em:"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "intro": "Sou seu personal trainer em Ciudad del Este, especializado em treino 100% personalizado, tanto online quanto presencial.",
+    "bio": [
+      "Minha abordagem combina treino de força e acompanhamento constante para que cada plano se adapte à sua vida real, e não o contrário.",
+      "Trabalho com um número limitado de pessoas por vez para oferecer um atendimento próximo e revisões periódicas de verdade, não respostas automáticas."
+    ],
+    "credentialsTitle": "Formação e experiência",
+    "credentials": [
+      "Graduado em Ciências da Atividade Física e do Esporte",
+      "Experiência treinando clientes online e presenciais em Ciudad del Este"
+    ]
+  },
+  "contactForm": {
+    "title": "Vamos falar sobre seu objetivo",
+    "subtitle": "Preencha o formulário e responderei o quanto antes, ou fale comigo direto pelo WhatsApp.",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telefone (opcional)",
+    "modality": "Modalidade de interesse",
+    "modalityOptions": {
+      "online": "Online",
+      "presencial": "Presencial",
+      "ambos": "Ainda não sei",
+      "no-se": "Ainda não sei"
+    },
+    "message": "Conte-me seu objetivo",
+    "submit": "Enviar mensagem",
+    "submitting": "Enviando...",
+    "success": "Obrigado! Sua mensagem foi enviada com sucesso, responderei o mais breve possível.",
+    "error": "Não foi possível enviar a mensagem. Tente novamente ou escreva-me pelo WhatsApp.",
+    "whatsappAlt": "Você também pode falar comigo diretamente"
+  },
+  "reviewsBadge": {
+    "cta": "Ver avaliações no Google"
+  }
+}

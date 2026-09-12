@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "homeTitle": "Entrenador Personal Online y Presencial en Ciudad del Este",
+    "homeDescription": "Entrenamiento 100% personalizado, online desde cualquier lugar o presencial en Ciudad del Este. Plan a tu medida, seguimiento real y resultados que se notan.",
+    "blogTitle": "Blog de entrenamiento",
+    "blogDescription": "Artículos sobre entrenamiento y hábitos saludables para ayudarte a entrenar mejor y con criterio.",
+    "aboutTitle": "Sobre mí",
+    "aboutDescription": "Conoce mi formación, experiencia y metodología como entrenador personal.",
+    "servicesTitle": "Servicios de entrenamiento online y presencial",
+    "servicesDescription": "Entrenamiento personalizado online o presencial en Ciudad del Este, con seguimiento incluido.",
+    "contactTitle": "Contacto",
+    "contactDescription": "Escríbeme por WhatsApp o completa el formulario para empezar tu entrenamiento personalizado."
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "blog": "Blog",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "cta": "Empezar ahora",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "languageSwitcher": {
+    "label": "Idioma",
+    "es": "Español",
+    "pt": "Português"
+  },
+  "hero": {
+    "eyebrow": "Entrenador personal online y presencial en Ciudad del Este",
+    "title": "Tu entrenador a un mensaje de distancia",
+    "subtitle": "Plan de entrenamiento 100% adaptado a ti, con seguimiento real. Entrena online desde donde estés o de forma presencial en Ciudad del Este.",
+    "bullets": [
+      "Plan claro y ajustado a tu nivel, objetivo y tiempo disponible",
+      "Cambios que ves en el espejo y en las métricas de progreso",
+      "Encaja en tu vida diaria, sin sacrificar lo que importa"
+    ],
+    "ctaPrimary": "Escríbeme por WhatsApp",
+    "ctaSecondary": "Ver planes y tarifas",
+    "badge": {
+      "role": "Entrenador personal",
+      "experience": "Formación en Ciencias del Deporte"
+    }
+  },
+  "howItWorks": {
+    "title": "Así es tu entrenamiento personalizado",
+    "subtitle": "Un proceso simple, pensado para que no tengas que preocuparte de nada excepto de entrenar.",
+    "steps": [
+      {
+        "title": "Cuéntame tu objetivo",
+        "description": "Hablamos por WhatsApp o videollamada sobre tu punto de partida, tu objetivo y el material o gimnasio con el que cuentas."
+      },
+      {
+        "title": "Recibes tu plan a medida",
+        "description": "Diseño tu entrenamiento personalizado, adaptado a tu rutina real, ya sea online o presencial."
+      },
+      {
+        "title": "Entrena con seguimiento constante",
+        "description": "Reviso tu progreso de forma periódica, ajusto lo que haga falta y resuelvo tus dudas por WhatsApp."
+      }
+    ]
+  },
+  "services": {
+    "title": "Elige tu modalidad de entrenamiento",
+    "subtitle": "Mismo nivel de personalización y seguimiento, elijas la modalidad que elijas.",
+    "cta": "Escríbeme por WhatsApp",
+    "online": {
+      "title": "Entrenamiento online",
+      "description": "Entrena desde donde estés, con un plan 100% adaptado a tu equipamiento (gimnasio completo, casa o material básico).",
+      "features": [
+        "Rutina de entrenamiento personalizada",
+        "Vídeo explicativo de cada ejercicio",
+        "Corrección técnica por vídeo",
+        "Soporte diario por WhatsApp",
+        "Revisión y ajuste periódico del plan"
+      ]
+    },
+    "presencial": {
+      "title": "Entrenamiento presencial",
+      "description": "Sesiones presenciales en Ciudad del Este, con la misma planificación y seguimiento que el entrenamiento online.",
+      "features": [
+        "Sesiones 1 a 1 en Ciudad del Este",
+        "Corrección técnica en tiempo real",
+        "Plan de entrenamiento personalizado",
+        "Seguimiento de progreso y fotos/medidas",
+        "Flexibilidad de horarios"
+      ]
+    }
+  },
+  "pricing": {
+    "title": "Tarifa actual",
+    "subtitle": "Un precio, todo incluido. Yo ajusto cada detalle; tú solo tienes que ejecutar el plan.",
+    "planName": "Plan completo",
+    "recommended": "Recomendado",
+    "price": "Consultar",
+    "period": "/ mes",
+    "features": [
+      "Entrenamiento 100% personalizado",
+      "Revisión periódica de tu progreso",
+      "Contacto directo por WhatsApp",
+      "Ajustes ilimitados durante el plan"
+    ],
+    "cta": "Escríbeme por WhatsApp",
+    "note": "Precio final según modalidad (online o presencial) y objetivo. Sin permanencia."
+  },
+  "testimonials": {
+    "title": "Lo que dicen quienes ya entrenan conmigo",
+    "subtitle": "Reseñas reales de clientes. (Contenido de ejemplo: sustitúyelo por tus reseñas de Google/clientes.)",
+    "items": [
+      {
+        "name": "Cliente satisfecho",
+        "text": "Empecé sin saber por dónde tirar y en pocos meses noté un cambio real, tanto en el espejo como en fuerza. El seguimiento constante marca la diferencia.",
+        "rating": 5
+      },
+      {
+        "name": "Cliente satisfecha",
+        "text": "Lo que más valoro es que el plan se ajusta a mi vida y no al revés. Las revisiones periódicas me mantienen motivada.",
+        "rating": 5
+      },
+      {
+        "name": "Cliente satisfecho",
+        "text": "Entrenamiento claro, sin complicaciones. Cualquier duda la resuelve rápido por WhatsApp.",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Si no resuelvo tu duda aquí, escríbeme por WhatsApp.",
+    "items": [
+      {
+        "question": "¿Qué incluye exactamente el servicio?",
+        "answer": "Entrenamiento 100% personalizado, conmigo de forma directa (no un equipo genérico), con seguimiento y ajustes periódicos, ya sea online o presencial en Ciudad del Este."
+      },
+      {
+        "question": "¿Funciona realmente un entrenador personal online?",
+        "answer": "Sí. Recibes un plan adaptado a tu equipamiento y nivel, con vídeos explicativos y corrección técnica, además de soporte constante por WhatsApp para resolver dudas al momento."
+      },
+      {
+        "question": "Soy principiante, ¿es para mí?",
+        "answer": "Sí, especialmente. La mayoría de clientes empieza desde cero o con experiencia básica. El plan se adapta a tu punto de partida real."
+      },
+      {
+        "question": "No tengo gimnasio ni equipamiento, ¿puedo entrenar en casa?",
+        "answer": "Sí. Diseño tu entrenamiento en función del material que tengas disponible, desde gimnasio completo hasta entrenamiento con el peso corporal."
+      },
+      {
+        "question": "¿En cuánto tiempo veré resultados?",
+        "answer": "Los primeros cambios (energía, fuerza, adherencia al plan) suelen notarse entre la 2ª y 4ª semana. Los cambios de composición corporal llegan de forma progresiva con la constancia."
+      },
+      {
+        "question": "¿Puedo entrenar de forma presencial si no vivo en Ciudad del Este?",
+        "answer": "El entrenamiento presencial está disponible en Ciudad del Este y alrededores. Si estás en otra ubicación, la modalidad online te da el mismo nivel de personalización y seguimiento."
+      },
+      {
+        "question": "¿Hay permanencia o puedo cancelar cuando quiera?",
+        "answer": "No hay permanencia obligatoria. Escríbeme por WhatsApp y vemos juntos las condiciones según tu caso."
+      }
+    ]
+  },
+  "ctaFinal": {
+    "title": "¿Listo para dejar de improvisar?",
+    "subtitle": "Escríbeme por WhatsApp y hablamos sobre tu objetivo, sin compromiso.",
+    "ctaPrimary": "Escríbeme por WhatsApp",
+    "ctaSecondary": "Ver el blog"
+  },
+  "footer": {
+    "tagline": "Entrenamiento personalizado, online y presencial en Ciudad del Este, Paraguay.",
+    "quickLinks": "Enlaces",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "madeWith": "Daniel Canteros"
+  },
+  "blog": {
+    "title": "Blog de entrenamiento",
+    "subtitle": "Artículos para ayudarte a entrenar mejor y entender el porqué de cada decisión.",
+    "readMore": "Leer artículo",
+    "backToBlog": "Volver al blog",
+    "empty": "Todavía no hay artículos publicados en este idioma. Vuelve pronto.",
+    "publishedOn": "Publicado el",
+    "minRead": "min de lectura",
+    "relatedTitle": "Otros artículos",
+    "alsoAvailable": "También disponible en:"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "intro": "Soy tu entrenador personal en Ciudad del Este, especializado en entrenamiento 100% personalizado, tanto online como presencial.",
+    "bio": [
+      "Mi enfoque combina entrenamiento de fuerza y seguimiento constante para que cada plan se adapte a tu vida real, no al revés.",
+      "Trabajo con un número limitado de personas a la vez para poder ofrecer una atención cercana y revisiones periódicas de verdad, no respuestas automáticas."
+    ],
+    "credentialsTitle": "Formación y experiencia",
+    "credentials": [
+      "Graduado en Ciencias de la Actividad Física y del Deporte",
+      "Experiencia entrenando clientes online y presenciales en Ciudad del Este"
+    ]
+  },
+  "contactForm": {
+    "title": "Hablemos de tu objetivo",
+    "subtitle": "Completa el formulario y te respondo a la brevedad, o escríbeme directamente por WhatsApp.",
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono (opcional)",
+    "modality": "Modalidad de interés",
+    "modalityOptions": {
+      "online": "Online",
+      "presencial": "Presencial",
+      "ambos": "Aún no lo sé",
+      "no-se": "Aún no lo sé"
+    },
+    "message": "Cuéntame tu objetivo",
+    "submit": "Enviar mensaje",
+    "submitting": "Enviando...",
+    "success": "¡Gracias! Tu mensaje se envió correctamente, te responderé lo antes posible.",
+    "error": "No se pudo enviar el mensaje. Inténtalo de nuevo o escríbeme por WhatsApp.",
+    "whatsappAlt": "También puedes escribirme directamente"
+  },
+  "reviewsBadge": {
+    "cta": "Ver reseñas en Google"
+  }
+}

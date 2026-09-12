@@ -1,0 +1,16 @@
+{
+  "name": "Tu Entrenador — Entrenador Personal Online y Presencial",
+  "short_name": "Tu Entrenador",
+  "description": "Entrenamiento personalizado, online y presencial en Ciudad del Este, Paraguay.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10141a",
+  "lang": "es",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

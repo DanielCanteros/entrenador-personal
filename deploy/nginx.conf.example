@@ -1,0 +1,43 @@
+# Reverse proxy para la API en la VM de Oracle Cloud.
+# Copia este archivo a /etc/nginx/sites-available/api.tudominio.com
+# y crea el enlace simbólico en sites-enabled.
+#
+# ln -s /etc/nginx/sites-available/api.tudominio.com /etc/nginx/sites-enabled/
+# nginx -t && systemctl reload nginx
+# certbot --nginx -d api.tudominio.com   (una vez que el DNS ya apunte a la VM)
+
+server {
+    listen 80;
+    server_name api.tudominio.com;
+
+    client_max_body_size 10m;
+
+    location / {
+        proxy_pass http://127.0.0.1:4000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+# Si además sirves el FRONTEND en esta misma VM (alternativa a Vercel),
+# usa un server block aparte para tudominio.com apuntando al puerto 3000
+# (next start) y ejecuta certbot --nginx -d tudominio.com -d www.tudominio.com
+#
+# server {
+#     listen 80;
+#     server_name tudominio.com www.tudominio.com;
+#
+#     location / {
+#         proxy_pass http://127.0.0.1:3000;
+#         proxy_http_version 1.1;
+#         proxy_set_header Host $host;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header X-Forwarded-Proto $scheme;
+#     }
+# }
