@@ -17,6 +17,7 @@
     "blog": "Blog",
     "about": "Sobre mim",
     "contact": "Contato",
+    "login": "Minha conta",
     "cta": "Começar agora",
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu"
@@ -27,20 +28,66 @@
     "pt": "Português"
   },
   "hero": {
-    "eyebrow": "Personal trainer online e presencial em Ciudad del Este",
-    "title": "Seu treinador a uma mensagem de distância",
-    "subtitle": "Plano de treino 100% adaptado a você, com acompanhamento real. Treine online de onde estiver ou de forma presencial em Ciudad del Este.",
-    "bullets": [
-      "Plano claro e ajustado ao seu nível, objetivo e tempo disponível",
-      "Mudanças que você vê no espelho e nas métricas de progresso",
-      "Encaixa na sua rotina, sem abrir mão do que importa"
+    "eyebrow": "Personal trainer · Ciudad del Este",
+    "titleLines": [
+      "Forje sua",
+      "melhor forma"
     ],
-    "ctaPrimary": "Fale comigo no WhatsApp",
-    "ctaSecondary": "Ver planos e valores",
-    "badge": {
-      "role": "Personal trainer",
-      "experience": "Formação em Ciências do Esporte"
-    }
+    "subtitle": "Treino personalizado feito sob medida: seus objetivos, seu ritmo, seus resultados. Online de onde estiver ou presencial em Ciudad del Este.",
+    "ctaPrimary": "Agende sua sessão",
+    "ctaSecondary": "Ver programas",
+    "imageAlt": "Personal trainer",
+    "stats": [
+      {
+        "value": 100,
+        "suffix": "%",
+        "label": "Personalizado",
+        "text": "Cada plano é construído em torno dos seus objetivos."
+      },
+      {
+        "value": 7,
+        "suffix": "/7",
+        "label": "Suporte pelo WhatsApp",
+        "text": "Dúvidas resolvidas em qualquer dia da semana."
+      }
+    ]
+  },
+  "programs": {
+    "eyebrow": "O que ofereço",
+    "titleLines": [
+      "Programas",
+      "para vencer"
+    ],
+    "intro": "Cada programa é criado com um único objetivo: que você alcance os resultados que veio buscar. Sem enrolação.",
+    "cta": "Ver todos os serviços",
+    "learnMore": "Saiba mais",
+    "items": [
+      {
+        "title": "Treino presencial 1 a 1",
+        "description": "Sessões individuais em Ciudad del Este com correção técnica em tempo real. Sem modelos prontos: tudo conforme sua agenda, seu corpo e suas metas."
+      },
+      {
+        "title": "Treino online",
+        "description": "Treine de onde estiver. Rotinas sob medida para o seu equipamento, vídeo de cada exercício e correção técnica por vídeo."
+      },
+      {
+        "title": "Avaliação e progresso",
+        "description": "Medimos seu ponto de partida e registramos sua evolução na sua conta para ajustar o plano com dados reais."
+      },
+      {
+        "title": "Acompanhamento pelo WhatsApp",
+        "description": "Suporte diário, revisões periódicas e ajustes ilimitados. Você nunca treina sozinho nem improvisa."
+      }
+    ]
+  },
+  "latestPosts": {
+    "eyebrow": "Conhecimento e dicas",
+    "titleLines": [
+      "Forje sua",
+      "mentalidade"
+    ],
+    "cta": "Todos os artigos",
+    "fallbackTag": "Blog"
   },
   "howItWorks": {
     "title": "Assim funciona seu treino personalizado",
@@ -58,7 +105,8 @@
         "title": "Treine com acompanhamento constante",
         "description": "Reviso seu progresso periodicamente, ajusto o que for necessário e tiro suas dúvidas pelo WhatsApp."
       }
-    ]
+    ],
+    "eyebrow": "Como funciona"
   },
   "services": {
     "title": "Escolha sua modalidade de treino",
@@ -85,7 +133,8 @@
         "Acompanhamento de progresso e fotos/medidas",
         "Flexibilidade de horários"
       ]
-    }
+    },
+    "eyebrow": "Modalidades"
   },
   "pricing": {
     "title": "Valor atual",
@@ -101,7 +150,8 @@
       "Ajustes ilimitados durante o plano"
     ],
     "cta": "Fale comigo no WhatsApp",
-    "note": "Valor final conforme modalidade (online ou presencial) e objetivo. Sem fidelidade."
+    "note": "Valor final conforme modalidade (online ou presencial) e objetivo. Sem fidelidade.",
+    "eyebrow": "Valores"
   },
   "testimonials": {
     "title": "O que dizem quem já treina comigo",
@@ -122,7 +172,8 @@
         "text": "Treino claro, sem complicação. Qualquer dúvida é resolvida rapidamente pelo WhatsApp.",
         "rating": 5
       }
-    ]
+    ],
+    "eyebrow": "Depoimentos"
   },
   "faq": {
     "title": "Perguntas frequentes",
@@ -156,13 +207,15 @@
         "question": "Há fidelidade ou posso cancelar quando quiser?",
         "answer": "Não há fidelidade obrigatória. Escreva-me pelo WhatsApp e vemos juntos as condições de acordo com o seu caso."
       }
-    ]
+    ],
+    "eyebrow": "Dúvidas frequentes"
   },
   "ctaFinal": {
     "title": "Pronto para parar de improvisar?",
     "subtitle": "Escreva-me pelo WhatsApp e vamos conversar sobre seu objetivo, sem compromisso.",
     "ctaPrimary": "Fale comigo no WhatsApp",
-    "ctaSecondary": "Ver o blog"
+    "ctaSecondary": "Ver o blog",
+    "eyebrow": "Dê o primeiro passo"
   },
   "footer": {
     "tagline": "Treino personalizado, online e presencial em Ciudad del Este, Paraguai.",

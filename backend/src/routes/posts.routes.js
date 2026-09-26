@@ -2,6 +2,7 @@ import { Router } from "express";
 import { Post } from "../models/Post.js";
 import { requireAuth } from "../middleware/auth.js";
 import { translatePost } from "../utils/translate.js";
+import { triggerPostsRevalidate } from "../utils/revalidate.js";
 
 const router = Router();
 
@@ -55,7 +56,9 @@ router.get("/", async (req, res, next) => {
     const locale = req.query.locale === "pt" ? "pt" : "es";
     const page = Math.max(parseInt(req.query.page, 10) || 1, 1);
     const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 9, 1), 50);
-    const tag = req.query.tag;
+    // Se fuerza a string: un valor no-string aquí (p. ej. un objeto con
+    // operadores Mongo como $ne) se pasaría tal cual al filtro de Mongoose.
+    const tag = typeof req.query.tag === "string" ? req.query.tag : undefined;
 
     const filter = { status: "published", locale };
     if (tag) filter.tags = tag;
@@ -120,6 +123,7 @@ router.get("/:slug", async (req, res, next) => {
 router.post("/", requireAuth, async (req, res, next) => {
   try {
     const post = await Post.create(pickWritableFields(req.body));
+    triggerPostsRevalidate();
     res.status(201).json({ post });
   } catch (err) {
     next(err);
@@ -193,6 +197,7 @@ router.post("/:id/translate", requireAuth, async (req, res, next) => {
       translatedByAI,
     });
 
+    triggerPostsRevalidate();
     res.status(201).json({ post: translation, translatedByAI });
   } catch (err) {
     next(err);
@@ -215,6 +220,7 @@ router.put("/:id", requireAuth, async (req, res, next) => {
     });
 
     await post.save();
+    triggerPostsRevalidate();
     res.json({ post });
   } catch (err) {
     next(err);
@@ -225,6 +231,7 @@ router.delete("/:id", requireAuth, async (req, res, next) => {
   try {
     const post = await Post.findByIdAndDelete(req.params.id);
     if (!post) return res.status(404).json({ error: "Post no encontrado" });
+    triggerPostsRevalidate();
     res.json({ ok: true });
   } catch (err) {
     next(err);

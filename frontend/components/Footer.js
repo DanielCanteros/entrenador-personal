@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "../i18n/navigation.js";
+import BrandMark from "./BrandMark.js";
 import { siteConfig, whatsappLink } from "../site.config.js";
 
 export default function Footer() {
@@ -10,8 +11,10 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="container site-footer__inner">
-        <div className="site-footer__col">
-          <p className="site-footer__brand">{siteConfig.brandName}</p>
+        <div className="site-footer__col site-footer__col--brand">
+          <Link href="/" className="site-footer__brand">
+            <BrandMark />
+          </Link>
           <p>{t("tagline")}</p>
         </div>
 
@@ -22,6 +25,7 @@ export default function Footer() {
             <li><Link href="/servicios">{tNav("services")}</Link></li>
             <li><Link href="/blog">{tNav("blog")}</Link></li>
             <li><Link href="/sobre-mi">{tNav("about")}</Link></li>
+            <li><Link href="/contacto">{tNav("contact")}</Link></li>
           </ul>
         </div>
 

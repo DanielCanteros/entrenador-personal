@@ -14,6 +14,9 @@ import authRoutes from "./routes/auth.routes.js";
 import postsRoutes from "./routes/posts.routes.js";
 import uploadRoutes from "./routes/upload.routes.js";
 import contactRoutes from "./routes/contact.routes.js";
+import clientesRoutes from "./routes/clientes.routes.js";
+import clienteAuthRoutes from "./routes/clienteAuth.routes.js";
+import evaluacionesRoutes from "./routes/evaluaciones.routes.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -31,13 +34,25 @@ if (process.env.NODE_ENV !== "production") {
   app.use(morgan("dev"));
 }
 
-app.use("/uploads", express.static(path.join(__dirname, "..", "uploads")));
+// Las imágenes subidas nunca cambian una vez creadas (nombre con UUID
+// aleatorio), así que se pueden cachear "para siempre" sin riesgo de servir
+// contenido desactualizado.
+app.use(
+  "/uploads",
+  express.static(path.join(__dirname, "..", "uploads"), {
+    maxAge: "1y",
+    immutable: true,
+  })
+);
 
 app.get("/api/health", (_req, res) => res.json({ ok: true, service: "entrenador-personal-api" }));
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postsRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/contact", contactRoutes);
+app.use("/api/clientes", clientesRoutes);
+app.use("/api/cliente-auth", clienteAuthRoutes);
+app.use("/api/evaluaciones", evaluacionesRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

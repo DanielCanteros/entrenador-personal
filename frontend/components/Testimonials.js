@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
+import SectionHeading from "./SectionHeading.js";
 
 function Stars({ rating }) {
   return (
-    <div className="testimonial-card__stars" aria-label={`${rating} / 5`}>
+    <div className="testimonial-card__stars" role="img" aria-label={`${rating} / 5`}>
       {Array.from({ length: 5 }).map((_, index) => (
-        <span key={index} aria-hidden="true">
-          {index < rating ? "★" : "☆"}
+        <span key={index} aria-hidden="true" className={index < rating ? "is-on" : undefined}>
+          ★
         </span>
       ))}
     </div>
@@ -17,21 +18,24 @@ export default function Testimonials() {
   const items = t.raw("items");
 
   return (
-    <section className="section section-alt">
+    <section className="section testimonials">
       <div className="container">
-        <div className="section-header">
-          <span className="eyebrow">{t("title")}</span>
-          <h2 className="section-title">{t("title")}</h2>
-          <p className="section-subtitle">{t("subtitle")}</p>
-        </div>
+        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 
-        <div className="grid grid-3">
-          {items.map((item) => (
-            <article key={item.name + item.text.slice(0, 10)} className="card testimonial-card">
+        <div className="testimonials__grid">
+          {items.map((item, index) => (
+            <figure
+              key={item.name + item.text.slice(0, 10)}
+              className="testimonial-card"
+              data-reveal
+              style={{ "--reveal-delay": `${index * 110}ms` }}
+            >
               <Stars rating={item.rating} />
-              <p>&ldquo;{item.text}&rdquo;</p>
-              <p className="testimonial-card__name">{item.name}</p>
-            </article>
+              <blockquote className="testimonial-card__text">
+                <p>{item.text}</p>
+              </blockquote>
+              <figcaption className="testimonial-card__name">{item.name}</figcaption>
+            </figure>
           ))}
         </div>
       </div>

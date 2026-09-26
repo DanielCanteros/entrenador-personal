@@ -7,6 +7,7 @@ import { adminLogout } from "../../lib/api.js";
 const NAV_LINKS = [
   { href: "/admin", label: "Artículos" },
   { href: "/admin/contactos", label: "Mensajes" },
+  { href: "/admin/clientes", label: "Clientes" },
 ];
 
 export default function AdminTopBar({ title }) {

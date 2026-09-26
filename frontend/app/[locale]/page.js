@@ -1,7 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import Hero from "../../components/Hero.js";
+import Programs from "../../components/Programs.js";
+import LatestPosts from "../../components/LatestPosts.js";
 import HowItWorks from "../../components/HowItWorks.js";
-import Services from "../../components/Services.js";
 import Pricing from "../../components/Pricing.js";
 import Testimonials from "../../components/Testimonials.js";
 import Faq from "../../components/Faq.js";
@@ -22,14 +23,19 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function HomePage() {
+// Orden de la referencia de diseño: Hero -> Programas -> Blog. Debajo siguen
+// las secciones de conversión y SEO (método, testimonios, tarifa, FAQ, CTA).
+export default async function HomePage({ params }) {
+  const { locale } = await params;
+
   return (
     <>
       <Hero />
+      <Programs />
+      <LatestPosts locale={locale} />
       <HowItWorks />
-      <Services />
-      <Pricing />
       <Testimonials />
+      <Pricing />
       <Faq />
       <CtaFinal />
     </>

@@ -1,19 +1,19 @@
 import { useTranslations } from "next-intl";
+import SectionHeading from "./SectionHeading.js";
 import WhatsAppButton from "./WhatsAppButton.js";
 
-function ServiceCard({ title, description, features }) {
+function ServiceCard({ index, title, description, features }) {
   return (
-    <div className="card service-card">
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <ul className="service-card__features">
+    <article className="service-card" data-reveal style={{ "--reveal-delay": `${index * 110}ms` }}>
+      <span className="service-card__number">{String(index + 1).padStart(2, "0")}</span>
+      <h3 className="service-card__title">{title}</h3>
+      <p className="service-card__text">{description}</p>
+      <ul className="check-list">
         {features.map((feature) => (
-          <li key={feature}>
-            <span aria-hidden="true">✓</span> {feature}
-          </li>
+          <li key={feature}>{feature}</li>
         ))}
       </ul>
-    </div>
+    </article>
   );
 }
 
@@ -23,21 +23,22 @@ export default function Services() {
   const presencial = t.raw("presencial");
 
   return (
-    <section className="section section-alt" id="servicios">
+    <section className="section services" id="servicios">
       <div className="container">
-        <div className="section-header">
-          <span className="eyebrow">{t("title")}</span>
-          <h2 className="section-title">{t("title")}</h2>
-          <p className="section-subtitle">{t("subtitle")}</p>
-        </div>
+        <SectionHeading
+          eyebrow={t("eyebrow")}
+          title={t("title")}
+          aside={
+            <>
+              <p>{t("subtitle")}</p>
+              <WhatsAppButton withArrow>{t("cta")}</WhatsAppButton>
+            </>
+          }
+        />
 
-        <div className="grid grid-2">
-          <ServiceCard {...online} />
-          <ServiceCard {...presencial} />
-        </div>
-
-        <div className="services__cta">
-          <WhatsAppButton>{t("cta")}</WhatsAppButton>
+        <div className="services__grid">
+          <ServiceCard index={0} {...online} />
+          <ServiceCard index={1} {...presencial} />
         </div>
       </div>
     </section>

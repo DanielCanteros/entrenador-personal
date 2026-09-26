@@ -17,6 +17,7 @@
     "blog": "Blog",
     "about": "Sobre mí",
     "contact": "Contacto",
+    "login": "Mi cuenta",
     "cta": "Empezar ahora",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
@@ -27,20 +28,66 @@
     "pt": "Português"
   },
   "hero": {
-    "eyebrow": "Entrenador personal online y presencial en Ciudad del Este",
-    "title": "Tu entrenador a un mensaje de distancia",
-    "subtitle": "Plan de entrenamiento 100% adaptado a ti, con seguimiento real. Entrena online desde donde estés o de forma presencial en Ciudad del Este.",
-    "bullets": [
-      "Plan claro y ajustado a tu nivel, objetivo y tiempo disponible",
-      "Cambios que ves en el espejo y en las métricas de progreso",
-      "Encaja en tu vida diaria, sin sacrificar lo que importa"
+    "eyebrow": "Entrenador personal · Ciudad del Este",
+    "titleLines": [
+      "Forja tu",
+      "mejor forma"
     ],
-    "ctaPrimary": "Escríbeme por WhatsApp",
-    "ctaSecondary": "Ver planes y tarifas",
-    "badge": {
-      "role": "Entrenador personal",
-      "experience": "Formación en Ciencias del Deporte"
-    }
+    "subtitle": "Entrenamiento personal diseñado a tu medida: tus objetivos, tu ritmo, tus resultados. Online desde donde estés o presencial en Ciudad del Este.",
+    "ctaPrimary": "Agenda tu sesión",
+    "ctaSecondary": "Ver programas",
+    "imageAlt": "Entrenador personal",
+    "stats": [
+      {
+        "value": 100,
+        "suffix": "%",
+        "label": "Personalizado",
+        "text": "Cada plan se construye alrededor de tus objetivos."
+      },
+      {
+        "value": 7,
+        "suffix": "/7",
+        "label": "Soporte por WhatsApp",
+        "text": "Dudas resueltas cualquier día de la semana."
+      }
+    ]
+  },
+  "programs": {
+    "eyebrow": "Lo que ofrezco",
+    "titleLines": [
+      "Programas",
+      "para ganar"
+    ],
+    "intro": "Cada programa se diseña con un solo objetivo: que consigas los resultados que viniste a buscar. Sin relleno.",
+    "cta": "Ver todos los servicios",
+    "learnMore": "Saber más",
+    "items": [
+      {
+        "title": "Entrenamiento presencial 1 a 1",
+        "description": "Sesiones personales en Ciudad del Este con corrección técnica en tiempo real. Sin plantillas: todo según tu horario, tu cuerpo y tus metas."
+      },
+      {
+        "title": "Entrenamiento online",
+        "description": "Entrena donde estés. Rutinas a medida de tu equipamiento, vídeo de cada ejercicio y corrección técnica por vídeo."
+      },
+      {
+        "title": "Evaluación y progreso",
+        "description": "Medimos tu punto de partida y registramos tu evolución en tu cuenta para ajustar el plan con datos reales."
+      },
+      {
+        "title": "Seguimiento por WhatsApp",
+        "description": "Soporte diario, revisiones periódicas y ajustes ilimitados. Nunca entrenas solo ni improvisas."
+      }
+    ]
+  },
+  "latestPosts": {
+    "eyebrow": "Conocimiento y consejos",
+    "titleLines": [
+      "Forja tu",
+      "mentalidad"
+    ],
+    "cta": "Todos los artículos",
+    "fallbackTag": "Blog"
   },
   "howItWorks": {
     "title": "Así es tu entrenamiento personalizado",
@@ -58,7 +105,8 @@
         "title": "Entrena con seguimiento constante",
         "description": "Reviso tu progreso de forma periódica, ajusto lo que haga falta y resuelvo tus dudas por WhatsApp."
       }
-    ]
+    ],
+    "eyebrow": "Cómo funciona"
   },
   "services": {
     "title": "Elige tu modalidad de entrenamiento",
@@ -85,7 +133,8 @@
         "Seguimiento de progreso y fotos/medidas",
         "Flexibilidad de horarios"
       ]
-    }
+    },
+    "eyebrow": "Modalidades"
   },
   "pricing": {
     "title": "Tarifa actual",
@@ -101,7 +150,8 @@
       "Ajustes ilimitados durante el plan"
     ],
     "cta": "Escríbeme por WhatsApp",
-    "note": "Precio final según modalidad (online o presencial) y objetivo. Sin permanencia."
+    "note": "Precio final según modalidad (online o presencial) y objetivo. Sin permanencia.",
+    "eyebrow": "Tarifas"
   },
   "testimonials": {
     "title": "Lo que dicen quienes ya entrenan conmigo",
@@ -122,7 +172,8 @@
         "text": "Entrenamiento claro, sin complicaciones. Cualquier duda la resuelve rápido por WhatsApp.",
         "rating": 5
       }
-    ]
+    ],
+    "eyebrow": "Testimonios"
   },
   "faq": {
     "title": "Preguntas frecuentes",
@@ -156,13 +207,15 @@
         "question": "¿Hay permanencia o puedo cancelar cuando quiera?",
         "answer": "No hay permanencia obligatoria. Escríbeme por WhatsApp y vemos juntos las condiciones según tu caso."
       }
-    ]
+    ],
+    "eyebrow": "Dudas frecuentes"
   },
   "ctaFinal": {
     "title": "¿Listo para dejar de improvisar?",
     "subtitle": "Escríbeme por WhatsApp y hablamos sobre tu objetivo, sin compromiso.",
     "ctaPrimary": "Escríbeme por WhatsApp",
-    "ctaSecondary": "Ver el blog"
+    "ctaSecondary": "Ver el blog",
+    "eyebrow": "Da el primer paso"
   },
   "footer": {
     "tagline": "Entrenamiento personalizado, online y presencial en Ciudad del Este, Paraguay.",

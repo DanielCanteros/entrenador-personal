@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import SectionHeading from "./SectionHeading.js";
 import WhatsAppButton from "./WhatsAppButton.js";
 
 export default function Pricing() {
@@ -6,28 +7,26 @@ export default function Pricing() {
   const features = t.raw("features");
 
   return (
-    <section className="section" id="tarifas">
-      <div className="container">
-        <div className="section-header">
-          <span className="eyebrow">{t("title")}</span>
-          <h2 className="section-title">{t("title")}</h2>
-          <p className="section-subtitle">{t("subtitle")}</p>
-        </div>
+    <section className="section pricing" id="tarifas">
+      <div className="container pricing__layout">
+        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 
-        <div className="pricing-card card">
-          <span className="badge">{t("recommended")}</span>
-          <h3>{t("planName")}</h3>
+        <div className="pricing-card" data-reveal style={{ "--reveal-delay": "120ms" }}>
+          <div className="pricing-card__top">
+            <h3 className="pricing-card__name">{t("planName")}</h3>
+            <span className="badge">{t("recommended")}</span>
+          </div>
           <p className="pricing-card__price">
             {t("price")} <span>{t("period")}</span>
           </p>
-          <ul className="pricing-card__features">
+          <ul className="check-list pricing-card__features">
             {features.map((feature) => (
-              <li key={feature}>
-                <span aria-hidden="true">✓</span> {feature}
-              </li>
+              <li key={feature}>{feature}</li>
             ))}
           </ul>
-          <WhatsAppButton className="btn-block">{t("cta")}</WhatsAppButton>
+          <WhatsAppButton className="btn-block" withArrow>
+            {t("cta")}
+          </WhatsAppButton>
           <p className="pricing-card__note">{t("note")}</p>
         </div>
       </div>

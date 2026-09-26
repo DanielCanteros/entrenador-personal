@@ -1,6 +1,14 @@
+import { Inter } from "next/font/google";
 import { getLocale } from "next-intl/server";
+import ScrollReveal from "../components/motion/ScrollReveal.js";
 import { siteConfig } from "../site.config.js";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -16,7 +24,7 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#10141a",
+  themeColor: "#0b0b0c",
   width: "device-width",
   initialScale: 1,
 };
@@ -25,8 +33,11 @@ export default async function RootLayout({ children }) {
   const locale = await getLocale();
 
   return (
-    <html lang={locale}>
-      <body>{children}</body>
+    <html lang={locale} className={inter.variable}>
+      <body>
+        {children}
+        <ScrollReveal />
+      </body>
     </html>
   );
 }

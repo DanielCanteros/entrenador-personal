@@ -28,6 +28,7 @@ const postSchema = new mongoose.Schema(
 
 postSchema.index({ slug: 1, locale: 1 }, { unique: true });
 postSchema.index({ status: 1, locale: 1, publishedAt: -1 });
+postSchema.index({ translationGroup: 1 });
 
 postSchema.pre("validate", function preValidate(next) {
   const slugLocale = this.locale === "pt" ? "pt" : "es";
