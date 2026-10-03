@@ -5,7 +5,7 @@ import path from "node:path";
 // public/images/ (idealmente PNG/WebP con fondo transparente, recortado a la
 // altura de la cintura, ~1200px de alto). Si no existe, el hero muestra un
 // monograma con las iniciales en su lugar.
-const CANDIDATES = ["entrenador-hero.webp", "entrenador-hero.png", "entrenador-hero.jpg"];
+const CANDIDATES = ["entrenador-hero1.webp", "entrenador-hero1.png", "entrenador-hero1.jpg"];
 
 export function getHeroImage() {
   const dir = path.join(process.cwd(), "public", "images");

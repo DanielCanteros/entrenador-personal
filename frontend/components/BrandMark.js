@@ -1,13 +1,17 @@
+import Image from "next/image";
 import { siteConfig } from "../site.config.js";
 
-/** Nombre de marca en dos tonos: la primera palabra en blanco, el resto en rojo. */
+/** Logo de la marca (public/images/logo.webp, fondo transparente). */
 export default function BrandMark({ name = siteConfig.brandName }) {
-  const [first, ...rest] = name.trim().split(/\s+/);
-
   return (
-    <span className="brand-mark">
-      {first}
-      {rest.length > 0 && <span className="brand-mark__accent"> {rest.join(" ")}</span>}
-    </span>
+    <Image
+      className="brand-mark"
+      src="/images/logo.webp"
+      alt={name}
+      width={640}
+      height={644}
+      sizes="140px"
+      priority
+    />
   );
 }

@@ -1,14 +1,16 @@
-import ClientePerfil from "../../components/ClientePerfil.js";
+import CuentaNav from "../../components/CuentaNav.js";
+import ProgresoDashboard from "../../components/progreso/ProgresoDashboard.js";
 
 export const metadata = {
-  title: "Mi perfil",
+  title: "Mi progreso",
   robots: { index: false, follow: false },
 };
 
 export default function CuentaPage() {
   return (
-    <div className="container admin-content" style={{ maxWidth: 560 }}>
-      <ClientePerfil />
+    <div className="container prog-page">
+      <CuentaNav />
+      <ProgresoDashboard />
     </div>
   );
 }

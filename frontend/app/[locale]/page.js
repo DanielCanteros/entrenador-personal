@@ -7,6 +7,7 @@ import Pricing from "../../components/Pricing.js";
 import Testimonials from "../../components/Testimonials.js";
 import Faq from "../../components/Faq.js";
 import CtaFinal from "../../components/CtaFinal.js";
+import MancuernaViaje from "../../components/motion/MancuernaViaje.js";
 import { absoluteUrl, buildAlternates } from "../../lib/seo.js";
 
 export async function generateMetadata({ params }) {
@@ -34,10 +35,14 @@ export default async function HomePage({ params }) {
       <Programs />
       <LatestPosts locale={locale} />
       <HowItWorks />
-      <Testimonials />
-      <Pricing />
-      <Faq />
-      <CtaFinal />
+      {/* La mancuerna viaja de Testimonios al CTA final atravesando estas secciones */}
+      <div className="viaje-tramo">
+        <Testimonials />
+        <Pricing />
+        <Faq />
+        <CtaFinal />
+        <MancuernaViaje />
+      </div>
     </>
   );
 }

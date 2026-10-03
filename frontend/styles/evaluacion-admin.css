@@ -1,0 +1,385 @@
+/* ==========================================================================
+   Admin · Evaluación del cliente (components/admin/EvaluacionAdmin.js)
+   Usa los tokens claros de .admin-shell.
+   ========================================================================== */
+
+.eval-cliente {
+  margin: 0 0 24px;
+}
+
+.eval-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 36px 0 16px;
+}
+
+.eval-section-head:first-of-type {
+  margin-top: 0;
+}
+
+.eval-section-head h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.eval-card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+
+.eval-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.eval-fieldset legend {
+  padding: 0;
+  margin-bottom: 14px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent-bright);
+}
+
+.eval-grid {
+  display: grid;
+  gap: 14px 16px;
+}
+
+.eval-grid + .eval-grid {
+  margin-top: 14px;
+}
+
+.eval-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.eval-grid--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.eval-grid--objetivo {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+}
+
+.eval-field {
+  gap: 6px;
+  font-size: 0.66rem;
+}
+
+.eval-field__control {
+  position: relative;
+  display: flex;
+}
+
+.eval-field__control input {
+  width: 100%;
+  padding-right: 48px;
+}
+
+.eval-field input,
+.eval-field select,
+.eval-field textarea {
+  padding: 11px 12px;
+  font-size: 0.95rem;
+}
+
+.eval-field textarea {
+  resize: vertical;
+  min-height: 84px;
+}
+
+.eval-field__unit {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--color-text-subtle);
+  pointer-events: none;
+}
+
+.eval-field input::placeholder {
+  color: var(--color-text-subtle);
+  opacity: 0.8;
+}
+
+.eval-hint {
+  margin: 10px 0 0;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.eval-hint--lead {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.eval-metas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-alt);
+  font-size: 0.85rem;
+}
+
+.eval-metas li.is-mantener {
+  color: var(--color-text);
+}
+
+.eval-metas__why {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.eval-details {
+  margin-top: 16px;
+}
+
+.eval-details summary {
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Perímetros bilaterales: etiqueta · derecho · izquierdo */
+.eval-bilateral {
+  display: grid;
+  grid-template-columns: 140px repeat(2, minmax(0, 200px));
+  gap: 10px 16px;
+  align-items: center;
+}
+
+.eval-bilateral__row {
+  display: contents;
+}
+
+.eval-bilateral__head {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.eval-bilateral__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Las etiquetas de cada input bilateral quedan solo para lectores de pantalla */
+.eval-bilateral .eval-field > span:first-child {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* Formulario de una evaluación + panel de resultados en vivo */
+.eval-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.eval-entry__main {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+
+.eval-results {
+  position: sticky;
+  top: 20px;
+  padding: 22px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-dark);
+  color: var(--color-text-inverse);
+}
+
+.eval-results__title {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffb583;
+}
+
+.eval-results__method {
+  margin: 4px 0 16px;
+  font-size: 0.8rem;
+  color: var(--color-text-muted-inverse);
+}
+
+.eval-results dl {
+  margin: 0;
+}
+
+.eval-results__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.88rem;
+}
+
+.eval-results__row:last-child {
+  border-bottom: 0;
+}
+
+.eval-results__row dt {
+  color: var(--color-text-muted-inverse);
+}
+
+.eval-results__row dd {
+  margin: 0;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.eval-results__row small {
+  font-weight: 500;
+  color: var(--color-text-muted-inverse);
+}
+
+.eval-results__badge {
+  margin: 14px 0 0;
+  padding: 8px 12px;
+  border-radius: var(--radius-xs);
+  background: rgba(255, 113, 0, 0.16);
+  color: #ffb583;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.eval-table td {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 1080px) {
+  .eval-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .eval-results {
+    position: static;
+  }
+}
+
+@media (max-width: 760px) {
+  .eval-grid--3,
+  .eval-grid--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .eval-grid--objetivo {
+    grid-template-columns: 1fr;
+  }
+
+  .eval-bilateral {
+    grid-template-columns: 90px repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Importación desde CSV (components/admin/EvaluacionCsvImport.js) */
+.eval-csv {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+}
+
+.eval-csv__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.eval-csv__title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.eval-csv__sub {
+  margin-top: 2px;
+}
+
+.eval-csv__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.eval-csv__link {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent-bright);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.eval-csv__preview {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.eval-csv__preview .eval-hint {
+  margin: 0;
+}
+
+.eval-csv__ok {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.eval-csv__skip {
+  color: var(--color-text-muted);
+}
+
+.eval-csv .contact-form__status {
+  margin: 0;
+}
+
+.eval-csv__notas {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}

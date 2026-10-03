@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Header from "../../components/Header.js";
 import Footer from "../../components/Footer.js";
+import "../../styles/progreso.css";
 
 export default async function CuentaLayout({ children }) {
   const messages = await getMessages();

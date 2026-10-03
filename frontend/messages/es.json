@@ -158,19 +158,25 @@
     "subtitle": "Reseñas reales de clientes. (Contenido de ejemplo: sustitúyelo por tus reseñas de Google/clientes.)",
     "items": [
       {
-        "name": "Cliente satisfecho",
-        "text": "Empecé sin saber por dónde tirar y en pocos meses noté un cambio real, tanto en el espejo como en fuerza. El seguimiento constante marca la diferencia.",
-        "rating": 5
+        "title": "Un cambio real",
+        "name": "Dani",
+        "text": "Gracias al entrenador André por fin puedo ver avances en mi salud física. Antes me sentía estancado y sin cambios, a un solo mes ya estoy viendo mejoras.",
+        "rating": 5,
+        "imageAlt": "Alumno haciendo estiramiento de tríceps con la ayuda del entrenador en el gimnasio"
       },
       {
-        "name": "Cliente satisfecha",
-        "text": "Lo que más valoro es que el plan se ajusta a mi vida y no al revés. Las revisiones periódicas me mantienen motivada.",
-        "rating": 5
+        "title": "Sabe lo que hace",
+        "name": "Vidal",
+        "text": "Excelente entrenador. Se nota que sabe muchísimo de entrenamiento y que realmente entiende lo que hace. Además, te motiva y te acompaña durante todo el proceso. ¡Recomendado!",
+        "rating": 5,
+        "imageAlt": "Alumno haciendo curl con barra W mientras el entrenador corrige la postura"
       },
       {
+        "title": "Sin vueltas",
         "name": "Cliente satisfecho",
         "text": "Entrenamiento claro, sin complicaciones. Cualquier duda la resuelve rápido por WhatsApp.",
-        "rating": 5
+        "rating": 5,
+        "imageAlt": "El entrenador revisando el plan en la computadora junto a un alumno"
       }
     ],
     "eyebrow": "Testimonios"

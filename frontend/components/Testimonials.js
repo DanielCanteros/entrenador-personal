@@ -1,5 +1,15 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import SectionHeading from "./SectionHeading.js";
+import MancuernasCaida from "./motion/MancuernasCaida.js";
+
+// Una foto por testimonio, en el mismo orden que testimonials.items.
+// Hay más fotos disponibles en public/images/depoimentos/ (3596, 3872, 3893, 3931).
+const PHOTOS = [
+  "/images/depoimentos/depoimento-3793.webp",
+  "/images/depoimentos/depoimento-4067.webp",
+  "/images/depoimentos/depoimento-pc.webp",
+];
 
 function Stars({ rating }) {
   return (
@@ -19,6 +29,7 @@ export default function Testimonials() {
 
   return (
     <section className="section testimonials">
+      <MancuernasCaida />
       <div className="container">
         <SectionHeading eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 
@@ -27,14 +38,30 @@ export default function Testimonials() {
             <figure
               key={item.name + item.text.slice(0, 10)}
               className="testimonial-card"
+              tabIndex={0}
               data-reveal
               style={{ "--reveal-delay": `${index * 110}ms` }}
             >
-              <Stars rating={item.rating} />
-              <blockquote className="testimonial-card__text">
-                <p>{item.text}</p>
-              </blockquote>
-              <figcaption className="testimonial-card__name">{item.name}</figcaption>
+              <Image
+                className="testimonial-card__photo"
+                src={PHOTOS[index % PHOTOS.length]}
+                alt={item.imageAlt}
+                fill
+                sizes="(max-width: 960px) 80vw, 33vw"
+              />
+
+              <div className="testimonial-card__body">
+                <Stars rating={item.rating} />
+                <h3 className="testimonial-card__title">{item.title}</h3>
+                <div className="testimonial-card__reveal">
+                  <div>
+                    <blockquote className="testimonial-card__text">
+                      <p>{item.text}</p>
+                    </blockquote>
+                    <figcaption className="testimonial-card__name">{item.name}</figcaption>
+                  </div>
+                </div>
+              </div>
             </figure>
           ))}
         </div>

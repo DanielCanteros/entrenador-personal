@@ -184,12 +184,24 @@ export function adminAddHistoricoEvaluacion(id, payload) {
   return request(`/api/evaluaciones/${id}/historico`, { method: "POST", body: payload, cache: "no-store" });
 }
 
+export function adminImportHistoricoEvaluacion(id, entries) {
+  return request(`/api/evaluaciones/${id}/historico/lote`, {
+    method: "POST",
+    body: { entries },
+    cache: "no-store",
+  });
+}
+
 export function adminUpdateHistoricoEvaluacion(id, entryId, payload) {
   return request(`/api/evaluaciones/${id}/historico/${entryId}`, {
     method: "PATCH",
     body: payload,
     cache: "no-store",
   });
+}
+
+export function adminDeleteHistoricoEvaluacion(id, entryId) {
+  return request(`/api/evaluaciones/${id}/historico/${entryId}`, { method: "DELETE", cache: "no-store" });
 }
 
 export async function adminUploadImage(file) {

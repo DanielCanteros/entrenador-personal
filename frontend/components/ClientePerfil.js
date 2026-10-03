@@ -2,88 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import {
-  clienteChangePassword,
-  clienteGetEvaluacion,
-  clienteLogout,
-  clienteMe,
-  clienteUpdateProfile,
-} from "../lib/api.js";
+import { clienteChangePassword, clienteMe, clienteUpdateProfile } from "../lib/api.js";
 import { CIUDADES_POR_PAIS } from "../lib/ciudades.js";
 
 const emptyForm = { nombre: "", apellido: "", pais: "", ciudad: "", idioma: "es" };
 const emptyPasswordForm = { currentPassword: "", newPassword: "", confirmNewPassword: "" };
 
-function formatFecha(isoDate) {
-  return new Date(isoDate).toLocaleDateString("es-PY");
-}
-
-function EvaluacionResumen({ evaluacion }) {
-  if (!evaluacion) {
-    return (
-      <div className="card contact-form" style={{ marginBottom: "1.5rem" }}>
-        <h2>Mi evaluación</h2>
-        <p className="section-subtitle">Todavía no tenés una evaluación cargada. Hablá con tu entrenador.</p>
-      </div>
-    );
-  }
-
-  const historico = [...(evaluacion.historico_evaluacion || [])].sort(
-    (a, b) => new Date(b.fecha_evaluacion) - new Date(a.fecha_evaluacion)
-  );
-  const ultimo = historico[0];
-
-  return (
-    <div className="card contact-form" style={{ marginBottom: "1.5rem" }}>
-      <h2>Mi evaluación</h2>
-
-      <div className="grid grid-2">
-        <label className="field">
-          <span>Edad</span>
-          <input value={evaluacion.edad ?? "—"} disabled />
-        </label>
-        <label className="field">
-          <span>Estatura</span>
-          <input value={evaluacion.estatura ? `${evaluacion.estatura} cm` : "—"} disabled />
-        </label>
-      </div>
-
-      {ultimo && (
-        <label className="field">
-          <span>Peso actual ({formatFecha(ultimo.fecha_evaluacion)})</span>
-          <input value={`${ultimo.peso} kg`} disabled />
-        </label>
-      )}
-
-      {historico.length > 1 && (
-        <div className="admin-table-wrapper">
-          <table className="admin-table">
-            <thead>
-              <tr>
-                <th>Fecha de evaluación</th>
-                <th>Peso</th>
-              </tr>
-            </thead>
-            <tbody>
-              {historico.map((entry) => (
-                <tr key={entry.id}>
-                  <td>{formatFecha(entry.fecha_evaluacion)}</td>
-                  <td>{entry.peso} kg</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function ClientePerfil() {
   const router = useRouter();
   const [status, setStatus] = useState("loading"); // loading | ready
   const [email, setEmail] = useState("");
-  const [evaluacion, setEvaluacion] = useState(null);
   const [form, setForm] = useState(emptyForm);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
@@ -108,11 +36,6 @@ export default function ClientePerfil() {
           idioma: cliente.idioma || "es",
         });
         setStatus("ready");
-        clienteGetEvaluacion()
-          .then(({ evaluacion }) => {
-            if (active) setEvaluacion(evaluacion);
-          })
-          .catch(() => {});
       })
       .catch(() => {
         if (active) router.replace("/cuenta/login");
@@ -172,14 +95,6 @@ export default function ClientePerfil() {
     }
   }
 
-  async function handleLogout() {
-    try {
-      await clienteLogout();
-    } finally {
-      router.push("/cuenta/login");
-    }
-  }
-
   if (status === "loading") {
     return <p>Cargando…</p>;
   }
@@ -188,12 +103,7 @@ export default function ClientePerfil() {
     <>
       <div className="admin-content__header">
         <h1>Mi perfil</h1>
-        <button type="button" className="btn btn-outline" onClick={handleLogout}>
-          Cerrar sesión
-        </button>
       </div>
-
-      <EvaluacionResumen evaluacion={evaluacion} />
 
       <form className="card contact-form" onSubmit={handleSubmit}>
         <label className="field">

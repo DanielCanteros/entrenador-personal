@@ -158,19 +158,25 @@
     "subtitle": "Depoimentos reais de clientes. (Conteúdo de exemplo: substitua pelas suas avaliações do Google/clientes.)",
     "items": [
       {
-        "name": "Cliente satisfeito",
-        "text": "Comecei sem saber por onde ir e em poucos meses notei uma mudança real, tanto no espelho quanto na força. O acompanhamento constante faz toda a diferença.",
-        "rating": 5
+        "title": "Mudança real",
+        "name": "Dani",
+        "text": "Graças ao treinador André, finalmente consigo ver avanços na minha saúde física. Antes eu me sentia estagnado e sem mudanças; com apenas um mês já estou vendo melhorias.",
+        "rating": 5,
+        "imageAlt": "Aluno fazendo alongamento de tríceps com a ajuda do treinador na academia"
       },
       {
-        "name": "Cliente satisfeita",
-        "text": "O que mais valorizo é que o plano se ajusta à minha rotina, e não o contrário. As revisões periódicas me mantêm motivada.",
-        "rating": 5
+        "title": "Sabe o que faz",
+        "name": "Vidal",
+        "text": "Excelente treinador. Dá para ver que sabe muito de treino e que realmente entende o que faz. Além disso, te motiva e te acompanha durante todo o processo. Recomendado!",
+        "rating": 5,
+        "imageAlt": "Aluno fazendo rosca com barra W enquanto o treinador corrige a postura"
       },
       {
+        "title": "Sem complicação",
         "name": "Cliente satisfeito",
         "text": "Treino claro, sem complicação. Qualquer dúvida é resolvida rapidamente pelo WhatsApp.",
-        "rating": 5
+        "rating": 5,
+        "imageAlt": "O treinador revisando o plano no computador ao lado de um aluno"
       }
     ],
     "eyebrow": "Depoimentos"
